@@ -23,7 +23,7 @@ Este archivo contiene la configuración y la lógica para conectar y poblar la b
 
 ### Requisitos Previos
 
-- Docker instalado en tu sistema. Puedes descargar Docker [aquí][https://www.docker.com/products/docker-desktop/].
+- Docker instalado en tu sistema. Puedes descargar Docker [aquí](https://www.docker.com/products/docker-desktop/).
 
 ## Pasos para Desplegar la Aplicación Node.js con MongoDB en Docker
 
@@ -32,8 +32,8 @@ Este archivo contiene la configuración y la lógica para conectar y poblar la b
 
 2. Instalar **node y mongodb** para hacer prueba en local.
  
- - Pasos para instalar nvm para tener la versión de node como la de npm, [link][https://medium.com/@diego.coder/instalar-nvm-node-version-manager-en-windows-80d6768fa183]
- -Pasos para instalar mongoDB, [link][https://www.mongodb.com/docs/manual/installation/].
+ - Pasos para instalar nvm para tener la versión de node como la de npm, [link](https://medium.com/@diego.coder/instalar-nvm-node-version-manager-en-windows-80d6768fa183)
+ -Pasos para instalar mongoDB, [link](https://www.mongodb.com/docs/manual/installation/).
 
 3. Crear los dos archivos de depliegue ``` development.env ``` como producción ```production.env ```, tenéis el ejemplo llamado ```.env.example``` para poder crear esos dos archivos con las claves necesarias.
 
