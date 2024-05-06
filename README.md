@@ -37,7 +37,7 @@ Este archivo contiene la configuración y la lógica para conectar y poblar la b
 
 3. Crear los dos archivos de depliegue ``` development.env ``` como producción ```production.env ```, tenéis el ejemplo llamado ```.env.example``` para poder crear esos dos archivos con las claves necesarias.
 
-4. Crear dentro del directorio la carpeta **data** y dentro otra carperta **db**
+4. Crear dentro del directorio la carpeta llamada **data** y dentro otra carperta llamada **db**.
 
 5. Instala las dependencias y prueba desplegando:
 ``` npm install ```
