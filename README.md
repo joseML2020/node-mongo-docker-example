@@ -41,7 +41,7 @@ Este archivo contiene la configuración y la lógica para conectar y poblar la b
 
 5. Instala las dependencias y prueba desplegando:
 ``` npm install ```
-``` npm run dev ```
+``` npm run dev ``` ` Esta configurado en el archivo package.json para ejecutar el script y también en la parte de configuración dependiendo si lo ejecutas en PRE o PRO `
 
 6. Edita el archivo docker-compose.yml si deseas cambiar el nombre del contenedor, los puertos o cualquier otra configuración.
 
