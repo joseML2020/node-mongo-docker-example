@@ -14,11 +14,11 @@ Este archivo contiene la configuración y la lógica para conectar y poblar la b
 
 1. Configuración:
 
-   - Asegúrate de tener configurado el archivo `config.js` con los datos de conexión a la base de datos MongoDB.
+ - Asegúrate de tener configurado el archivo `config.js` con los datos de conexión a la base de datos MongoDB.
 
 2. Ejecución:
 
-  - Este archivo se ejecuta automáticamente al iniciar la aplicación. Se conectará a la base de datos MongoDB y poblará la base de datos con datos de ejemplo si es necesario.
+ - Este archivo se ejecuta automáticamente al iniciar la aplicación. Se conectará a la base de datos MongoDB y poblará la base de datos con datos de ejemplo si es necesario.
 
 
 ### Requisitos Previos
