@@ -1,0 +1,29 @@
+#---------------------------------------------------------
+#    Primera línea: Algo breve pero descriptivo de lo que se ha hecho
+#    Que sirva para algo! :)
+#    Que facilite las búsquedas si es preciso
+#----------------------------------------------------------
+#    Debe empezar por uno de estos prefijos:
+#    - FIX: corrige un error en la función creacionista de usuarios.
+#    - FEAT: Se añade como pasarela de pago Stripe
+#    - DOCS: Añade documentación a ClientController
+#    - REFACTOR: Se realiza una refactorización de redsysApi
+#    - TEST: Se añaden los test para el crud de usuarios.
+#
+#    Además, se le añade el id de la tarea del gestor de proyecto actual
+#    Por ejemplo:
+#    - PREFIJO:#ID TAREA: DESCRIPCIóN TAREA
+#    - FIX:#inv-24: corrección del formulario de registro.
+#    - DOC:#inv-56: añadir documentación adicional al servicio de cliente
+#    - REFACTOR:#inv-73: Subscription de pagos con la pasarela de Stripe
+
+#----------------------------------------------------------
+#----------------------------------------------------------
+#  BREAKING CHANGE
+#----------------------------------------------------------
+#    Esta etiqueta debe añadirse al final del comentario del commit,
+#    si al agregar un nuevo paquete, dependencia o funcionalidad
+#    la arquitectura anterior del proyecto es necesaria modificarla.
+#    Por ejemplo, se requiera una subida de PHP, activar nuevas extensiones...etc.
+#    Este tipo de cambios incurrirán en una subida del versionado del proyecto.
+#----------------------------------------------------------
