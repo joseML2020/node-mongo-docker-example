@@ -12,7 +12,9 @@ module.exports = {
     PORT:  process.env.PORT || 8443,
     MONGODB_USER: process.env.MONGODB_USER || 'root',
     MONGODB_PASSWORD: process.env.MONGODB_PASSWORD || 'root',
-    MONGODB_HOST: process.env.MONGODB_HOST || 'localhost' ,
+    MONGODB_HOSTNAME: process.env.MONGODB_HOST || 'localhost' ,
     MONGODB_DATABASE: process.env.MONGODB_DATABASE || 'crud',
-    MONGODB_PORT: process.env.MONGODB_PORT || 27017
+    MONGODB_PORT: process.env.MONGODB_PORT || 27017,
+    MONGODB_URL: process.env.MONGODB_URL || `mongodb://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_HOSTNAME}:${process.env.MONGODB_PORT}/${process.env.MONGODB_DATABASE}
+    `
   }

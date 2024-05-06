@@ -2,35 +2,45 @@ version: "3"
 services:
    database:
      container_name: mongodatabase
-     image: mongo
+     image: mongo:latest
      ports:
-        - "27017:27017"
+        - "27018:27017"
      environment:
         - MONGO_INITDB_ROOT_USERNAME=root
-        - MONGO_INITDB_ROOT_PASSWORD=password
+        - MONGO_INITDB_ROOT_PASSWORD=pass
      volumes:
-        - .:/data/db 
+      -  ./init-db:/docker-entrypoint-initdb.d
+      - ./data/db:/tmp/db
+     command: ["mongod", "--bind_ip_all", "--auth"]
      logging:
        driver: none
      networks:
         - node-network
-   
+
    web:
      container_name: nodeapp
-     restart: always
+   #   restart: always
      build: .
      ports:
         - "4000:8443"
         - "8001:8000" 
      links:
         - database
+     environment:
+       ME_CONFIG_MONGODB_ADMINUSERNAME: root
+       ME_CONFIG_MONGODB_ADMINPASSWORD: pass
+       MONGODB_USER: user2
+       MONGODB_PASSWORD: user
+       MONGODB_HOST: 127.0.0.1
+       MONGODB_DATABASE: crud
+       MONGODB_PORT: 27017
+       MONGODB_URL: mongodb://user2:user@database:27017/crud
      depends_on:
         - database
      volumes:
         - .:/usr/src/app
      networks:
         - node-network  
- 
 
 networks:
   node-network:

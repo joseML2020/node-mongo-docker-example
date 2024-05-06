@@ -9,11 +9,15 @@ const Score = require('./schema/score');
 const Student = require('./schema/student');
 
 const connectDB = async () => {
+
+    const options = {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        socketTimeoutMS: 30000 
+      };
+      
     try {
-        await mongoose.connect(`mongodb://${config.MONGODB_USER}:${config.MONGODB_PASSWORD}@${config.MONGODB_HOST}:${config.MONGODB_PORT}/${config.MONGODB_DATABASE}`, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });
+        await mongoose.connect(config.MONGODB_URL, options);
         console.log(`Db está conectado`);
 
         for (const studentData of data) {
@@ -36,7 +40,7 @@ const connectDB = async () => {
         }
     } catch (error) {
         console.error('Error:', error);
-        process.exit(1);
+        // process.exit(1);
     }
 };
 
