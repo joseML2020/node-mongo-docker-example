@@ -30,19 +30,20 @@ Este archivo contiene la configuración y la lógica para conectar y poblar la b
 1. Clona este repositorio en tu máquina local:
 ```git clone https://github.com/tu_usuario/nombre_del_repositorio.git```
 
-2. Instalar **node y mongodb** para hacer prueba en local
+2. Instalar **node y mongodb** para hacer prueba en local.
  
  - Pasos para instalar nvm para tener la versión de node como la de npm, (link)[https://medium.com/@diego.coder/instalar-nvm-node-version-manager-en-windows-80d6768fa183]
- -Pasos para instalar mongoDB, (link)[https://www.mongodb.com/docs/manual/installation/]
+ -Pasos para instalar mongoDB, (link)[https://www.mongodb.com/docs/manual/installation/].
 
+3. Crear los dos archivos de depliegue ``` development.env ``` como producción ```production.env ```, tenéis el ejemplo llamado ```.env.example``` para poder crear esos dos archivos con las claves necesarias.
 
-3. Instala las dependencias y prueba desplegando
+4. Instala las dependencias y prueba desplegando:
 ``` npm install ```
 ``` npm run dev ```
 
-4. Edita el archivo docker-compose.yml si deseas cambiar el nombre del contenedor, los puertos o cualquier otra configuración.
+5. Edita el archivo docker-compose.yml si deseas cambiar el nombre del contenedor, los puertos o cualquier otra configuración.
 
-5. Ejecuta Docker Compose para iniciar los contenedores de Node.js y MongoDB:
+6. Ejecuta Docker Compose para iniciar los contenedores de Node.js y MongoDB:
 ``` docker-compose up -d ```
  
  - Para poder borrar los contenedores puedes hacerlo dentro de la app de docker o puede utilizar este comando:``` docker-compose down ```
