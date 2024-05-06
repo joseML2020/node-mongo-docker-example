@@ -68,6 +68,6 @@ Este directorio contiene los esquemas de la base de datos y datos de ejemplo par
 - `data/`: Contiene datos de ejemplo para poblar la base de datos MongoDB.
 
 # Licencia
-Este proyecto está bajo la (Licencia MIT)[LICENSE].
+Este proyecto está bajo la (Licencia)[LICENSE].
 
 Si te ha resultado útil este repositorio :wrench: recuerda que puedes ponerle una estrellita :star:
