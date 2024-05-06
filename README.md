@@ -37,19 +37,21 @@ Este archivo contiene la configuración y la lógica para conectar y poblar la b
 
 3. Crear los dos archivos de depliegue ``` development.env ``` como producción ```production.env ```, tenéis el ejemplo llamado ```.env.example``` para poder crear esos dos archivos con las claves necesarias.
 
-4. Instala las dependencias y prueba desplegando:
+4. Crear dentro del directorio la carpeta **data** y dentro otra carperta **db**
+
+5. Instala las dependencias y prueba desplegando:
 ``` npm install ```
 ``` npm run dev ```
 
-5. Edita el archivo docker-compose.yml si deseas cambiar el nombre del contenedor, los puertos o cualquier otra configuración.
+6. Edita el archivo docker-compose.yml si deseas cambiar el nombre del contenedor, los puertos o cualquier otra configuración.
 
-6. Ejecuta Docker Compose para iniciar los contenedores de Node.js y MongoDB:
+7. Ejecuta Docker Compose para iniciar los contenedores de Node.js y MongoDB:
 ``` docker-compose up -d ```
  
  - Para poder borrar los contenedores puedes hacerlo dentro de la app de docker o puede utilizar este comando:``` docker-compose down ```
  - Para ver la lista de contenedores: ```docker ps -a```
 
-6. ¡Listo! Ahora tienes una aplicación Node.js desplegada en Docker que se conecta a una base de datos MongoDB. Puedes acceder a la aplicación en **http://localhost:puerto**, donde puerto es el puerto que especificaste en el archivo **docker-compose.yml**.
+8. ¡Listo! Ahora tienes una aplicación Node.js desplegada en Docker que se conecta a una base de datos MongoDB. Puedes acceder a la aplicación en **http://localhost:puerto**, donde puerto es el puerto que especificaste en el archivo **docker-compose.yml**.
 
 # Endpoints Disponibles
 
